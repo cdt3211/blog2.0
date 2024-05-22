@@ -3,7 +3,6 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: '基于Zeabur部署Memos实现说说页面'
 date: '2023-08-20'
 tags: ['博客搭建']
-categories: '教程分享'
 ---
 
 # 前言

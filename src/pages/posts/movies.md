@@ -3,7 +3,6 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: '外国影视名作欣赏笔记'
 date: '2023-12-18'
 tags: ['电影', '笔记']
-categories: '学习笔记'
 ---
 
 类型电影是美国的主流

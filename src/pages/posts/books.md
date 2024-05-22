@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 阅读清单
 date: '2023-09-23'
-tags: 阅读
+tags: ['阅读']
 ---
 
 

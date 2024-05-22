@@ -2,7 +2,6 @@
 title: 'SQL笔记'
 date: '2023-07-23'
 tags: ['SQL']
-categories: '学习笔记'
 ---
 
 # SQL笔记
