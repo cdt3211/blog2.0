@@ -1,9 +1,25 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+const allPosts = await Astro.glob('../pages/books/*.md');
 const pageTitle = "Books";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <h2>{pageTitle}</h2>
-  <h3>建设中...</h3>
+  <ul>
+		{allPosts.sort((a, b) => new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime()).map((post) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
+	</ul>
 </BaseLayout>
+<style>
+  	ul {
+		list-style-type:disc;
+		/* padding: 0; */
+    }
+    li {
+      margin-bottom: 1rem;
+    }
+    a{
+      text-decoration: none;
+      color: #333;
+    }
+</style>
