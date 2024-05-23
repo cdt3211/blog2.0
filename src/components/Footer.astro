@@ -1,5 +1,8 @@
 ---
-
+import { Image } from 'astro:assets';
+import email from '../img/email.svg';
+import github from '../img/github.svg';
+import twitter from '../img/twitter.svg';
 ---
 
 <style>
@@ -14,8 +17,8 @@
     }
 </style>
 <footer>
-    <a href="https://twitter.com/AbnerTy1"><img src="/src/img/twitter.svg" alt="twitter"></a>
-    <a href="https://github.com/cdt3211"><img src="/src/img/github.svg" alt="github"></a>
-    <a href="mailto:1228428816@qq.com"><img src="/src/img/email.svg" alt="email"></a>
+    <a href="https://github.com/cdt3211"><Image src={github} alt="github" /></a>
+    <a href="https://twitter.com/AbnerTy1"><Image src={twitter} alt="twitter" /></a>
+    <a href="mailto:1228428816@qq.com"><Image src={email} alt="email" /></a>
     
 </footer>
