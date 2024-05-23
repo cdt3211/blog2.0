@@ -40,18 +40,11 @@ h1 {
 /* 导航样式 */
 .hamburger {
   cursor: pointer;
-  height: 40px;
-  padding: 0.6rem;
+  padding: 0.4rem;
   float: right;
-}
-
-.hamburger .line{
-  display: block;
-  width: 35px;
-  height: 3px;
-  margin-bottom: 5px;
-  margin-left: auto;
-  background-color: #000000;
+  transform: scale(1.5);
+  width: 40px;
+  height: 40px;
 }
 
 .nav-logo a{

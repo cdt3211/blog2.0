@@ -6,19 +6,34 @@ import twitter from '../img/twitter.svg';
 ---
 
 <style>
-    footer {
-      display: flex;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-    a {
-      width: 1.5rem;
-      height: 1.5rem;
-    }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #dbdada;
+    margin-top: 1rem;
+    padding: 10px;
+  }
+  .content {
+    display: flex;
+    flex-grow: 1;
+  }
+  .links {
+    display: flex;
+    gap: 1rem;
+  }
+  a {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 </style>
 <footer>
+  <div class="content">
+    <p>© 2023 Abner</p>
+  </div>
+  <div class="links">
     <a href="https://github.com/cdt3211"><Image src={github} alt="github" /></a>
     <a href="https://twitter.com/AbnerTy1"><Image src={twitter} alt="twitter" /></a>
     <a href="mailto:1228428816@qq.com"><Image src={email} alt="email" /></a>
-    
+  </div>
 </footer>
