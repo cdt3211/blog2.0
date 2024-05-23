@@ -3,6 +3,27 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "朋友们";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <div class="container">
-    <h2>Friends</h2>
-</div>
+  <h2>Friends</h2>
+  <ul>
+    <li><a href="https://blog.leonus.cn/" target="_blank">Leonus</a></li>
+    <li><a href="https://blog.bywind.xyz/" target="_blank">随风起</a></li>
+    <li><a href="https://www.imets.cn/" target="_blank">静若安然</a></li>
+    <li><a href="https://www.harrypan.cn/" target="_blank">庭院一角</a></li>
+    <li><a href="https://www.liveout.cn/" target="_blank">Echo 的小窝</a></li>
+    <li><a href="https://qingfengnb.cn/" target="_blank">轻风BLOG</a></li>
+    <li><a href="https://www.bio-w.cn/" target="_blank">西瓜撞地球</a></li>
+    <li><a href="https://shixiaocaia.fun/" target="_blank">Shixiaocaia</a></li>
+  </ul>
+</BaseLayout>
+<style>
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  ul {
+		list-style-type:square;
+	}
+	li {
+		margin-bottom: 0.5rem;
+	}
+</style>
