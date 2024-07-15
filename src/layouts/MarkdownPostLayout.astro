@@ -3,12 +3,43 @@ import BaseLayout from './BaseLayout.astro';
 const { frontmatter } = Astro.props;
 ---
 <BaseLayout pageTitle={frontmatter.title}>
+    <!-- <div id="outline"></div> -->
     <h1>{frontmatter.title}</h1>
     <p class="date">{frontmatter.date.toString().slice(0,10)}</p>
     <p><em>{frontmatter.description}</em></p>
     <slot />
 </BaseLayout>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        const outline = document.getElementById('outline');
+        const headers = Array.from(document.querySelectorAll('h1, h2, h3, h4, h5, h6'));
+        headers.forEach(header => {
+            const link = document.createElement('a');
+            link.textContent = header.textContent;
+            link.href = '#' + header.id;
+            outline.appendChild(link);
+            outline.appendChild(document.createElement('br'));
+            //不同级别大小不同
+            link.style.fontSize = (18 - parseInt(header.tagName[1])) + 'px';
+            //去掉下画线，文字颜色为黑色
+            link.style.textDecoration = 'none';
+            link.style.color = 'black';
+            //鼠标悬浮改变字体颜色
+            link.onmouseover = () => link.style.color = 'skyblue';
+            link.onmouseout = () => link.style.color = 'black';
+        });
+    });
+</script>
 <style>
+    #outline {
+        position: fixed;
+        left: 80px;
+        top: 0;
+        width: 200px;
+        height: 100%;
+        overflow: auto;
+        padding: 1em;
+    }
     .date{
         font-size: 0.8em;
         color: #666;
