@@ -5,18 +5,17 @@ const pageTitle = "About";
 
 <BaseLayout pageTitle={pageTitle}>
   <h2>关于我</h2>
-  大二学生 🧑‍💻| 软件工程专业💻| 不切实际的理想主义者😶‍🌫️
-  <br>
-  <br>
-  这世上有两个我，
-  <br>
-  一个躯壳喂日常,
-  <br>
-  一个灵魂补岁月；
-  <br>
-  一个举杯邀明月,
-  <br>
-  一个跪地捡碎银。
+  <div class="about-me">
+    <div class="description">
+      <p>大二学生 🧑‍💻| 软件工程专业💻| 不切实际的理想主义者😶‍🌫️</p>
+      <p>这世上有两个我，</p>
+      <p>一个躯壳喂日常,</p>
+      <p>一个灵魂补岁月；</p>
+      <p>一个举杯邀明月,</p>
+      <p>一个跪地捡碎银。</p>
+    </div>
+    <div class="avatar"><img src="https://abnerblog-1317606226.cos.ap-nanjing.myqcloud.com/202406291900870.jpg" alt="Abner"></div>
+  </div>
   <h2>关于本站</h2>
   <p>本站以 <a href="https://astro.build/" target="_blank">Astro</a> 为框架，部署于 <a href="https://github.com/" target="_blank">Github Pages</a>，由 <a href="https://dash.cloudflare.com/" target="_blank">Cloudflare</a> 负责 DNS解析，图片存放于<a href="https://cloud.tencent.com/" target="_blank">腾讯云 COS</a>。</p>
   <h3>博客史</h3>
@@ -44,5 +43,18 @@ const pageTitle = "About";
   li{
     margin-bottom: 8px;
     color: gray;
+  }
+  .about-me{
+    display: flex;
+    justify-content: space-between;
+  }
+  .description{
+    line-height: 10px;
+  }
+  .avatar img{
+    /* text-align: center; */
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
   }
 </style>
