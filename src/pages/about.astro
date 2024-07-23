@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import history from '../data/history.json'
 const pageTitle = "About";
 ---
 
@@ -20,18 +21,9 @@ const pageTitle = "About";
   <p>本站以 <a href="https://astro.build/" target="_blank">Astro</a> 为框架，部署于 <a href="https://github.com/" target="_blank">Github Pages</a>，由 <a href="https://dash.cloudflare.com/" target="_blank">Cloudflare</a> 负责 DNS解析，图片存放于<a href="https://cloud.tencent.com/" target="_blank">腾讯云 COS</a>。</p>
   <h3>博客史</h3>
   <ul>
-    <li>2023.03.28 - 本站成立</li>
-    <li>2023.03.31 - 更换fluid主题</li>
-    <li>2023.04.02 - 绑定域名</li>
-    <li>2023.08.17 - 增加twikoo评论系统</li>
-    <li>2023.08.18 - 采用cloudflare进行CDN加(减)速</li>
-    <li>2023.08.19 - 增加基于LeanCloud和Artitalk的说说页面，同时更换butterfly主题</li>
-    <li>2023.08.20 - 将说说页面改为基于Zeabur的Memos部署，同时增加了安利页面</li>
-    <li>2023.09.12 - 考虑到数据存留问题，删除说说页面，博客页面回归简约</li>
-    <li>2023.09.13 - 删除评论留言功能</li>
-    <li>2023.09.23 - 更换oranges主题（美化的尽头还是简约）</li>
-    <li>2023.12.20 - 更换为fluid主题</li>
-    <li>2024.05.21 - 使用 astro 重新搭建设计博客</li>
+    {history.map(history => 
+      <li>{history.date} {history.event}</li>
+    )}
   </ul>
 </BaseLayout>
 <style>
