@@ -1,22 +1,26 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import friends from '../data/friends.json';
 const pageTitle = "Friends";
 ---
 <BaseLayout pageTitle={pageTitle}>
   <h2>Friends</h2>
   <ul>
-    <li><a href="https://blog.leonus.cn/" target="_blank">Leonus</a></li>
-    <li><a href="https://blog.bywind.xyz/" target="_blank">随风起</a></li>
-    <li><a href="https://www.imets.cn/" target="_blank">静若安然</a></li>
-    <li><a href="https://www.harrypan.cn/" target="_blank">庭院一角</a></li>
-    <li><a href="https://www.liveout.cn/" target="_blank">Echo 的小窝</a></li>
-    <li><a href="https://qingfengnb.cn/" target="_blank">轻风BLOG</a></li>
-    <li><a href="https://www.bio-w.cn/" target="_blank">西瓜撞地球</a></li>
-    <li><a href="https://shixiaocaia.fun/" target="_blank">Shixiaocaia</a></li>
-    <li><a href="https://blog.stv.lol" target="_blank">Steven Lynn's Blog</a></li>
+    {friends.map((friend) =>(
+      <li>
+        <a href={friend.url} target="_blank">{friend.name}</a>
+      </li>
+    ))}
   </ul>
   <br>
   <h2>欢迎任何小伙伴与我联系交换友链</h2>
+  <div class="my-link">
+    <p>格式如下</p>
+    <p>name: Abner</p>
+    <p>link: https://cdt3211.top</p>
+    <p>avatar: https://abnerblog-1317606226.cos.ap-nanjing.myqcloud.com/202406291900870.jpg</p>
+    <p>description: 子非鱼，安知鱼之乐</p>
+  </div>
 
 </BaseLayout>
 <style>
@@ -30,4 +34,10 @@ const pageTitle = "Friends";
 	li {
 		margin-bottom: 0.5rem;
 	}
+  .my-link{
+    margin-top: 1rem;
+    border: 1px solid #dbdada;
+    padding: 10px;
+    line-height: 10px;
+  }
 </style>

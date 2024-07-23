@@ -7,7 +7,7 @@ const pageTitle = "About";
   <h2>关于我</h2>
   <div class="about-me">
     <div class="description">
-      <p>大二学生 🧑‍💻| 软件工程专业💻| 不切实际的理想主义者😶‍🌫️</p>
+      <p>大二学生🧑‍💻|软件工程专业💻|不切实际的理想主义者😶‍🌫️</p>
       <p>这世上有两个我，</p>
       <p>一个躯壳喂日常,</p>
       <p>一个灵魂补岁月；</p>
@@ -49,12 +49,22 @@ const pageTitle = "About";
     justify-content: space-between;
   }
   .description{
-    line-height: 10px;
+    line-height: 15px;
   }
   .avatar img{
     /* text-align: center; */
     border-radius: 50%;
     height: 150px;
     width: 150px;
+  }
+  @media screen and (max-width: 768px){
+    .about-me{
+      flex-direction: column-reverse;
+    }
+    .avatar{
+      text-align: center;
+      margin: 1rem 0;
+    }
+    
   }
 </style>
