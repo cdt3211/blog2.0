@@ -4,11 +4,17 @@ import friends from '../data/friends.json';
 const pageTitle = "Friends";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2>Friends</h2>
+  <h2>赛博邻居们</h2>
   <ul>
     {friends.map((friend) =>(
       <li>
-        <a href={friend.url} target="_blank">{friend.name}</a>
+        <div class="friend-card">
+          <img src={friend.avatar} alt={friend.name} width="50" height="50"/>
+          <div class="info">
+            <a href={friend.url} target="_blank">{friend.name}</a>
+            <p>{friend.description}</p>
+          </div>
+        </div>
       </li>
     ))}
   </ul>
@@ -19,7 +25,7 @@ const pageTitle = "Friends";
     <p>name: Abner</p>
     <p>link: https://cdt3211.top</p>
     <p>avatar: https://abnerblog-1317606226.cos.ap-nanjing.myqcloud.com/202406291900870.jpg</p>
-    <p>description: 子非鱼，安知鱼之乐</p>
+    <p>description: 日拱一卒，功不唐捐</p>
   </div>
 
 </BaseLayout>
@@ -27,13 +33,35 @@ const pageTitle = "Friends";
   a{
     text-decoration: none;
     color: black;
+    width: max-content;
+  }
+  a:hover{
+    color: #0ea8e0;
   }
   ul {
 		list-style-type:square;
 	}
 	li {
 		margin-bottom: 0.5rem;
+    list-style: none;
 	}
+  .friend-card{
+    display: flex;
+    align-items: center;
+  }
+  .friend-card img{
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+  .info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+  }
+  .info p{
+    margin-top: 0.5rem;
+    color: #7e7e7e;
+  }
   .my-link{
     margin-top: 1rem;
     border: 1px solid #dbdada;

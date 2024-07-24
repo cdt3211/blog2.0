@@ -1,0 +1,16 @@
+[
+    {
+        "name": "中国旅游数据可视化平台",
+        "description": "本项目是一个综合性的中国旅游数据可视化平台，旨在提供准确、及时和易于理解的旅游数据分析。通过结合国家统计局和地方统计局的数据，我们创建了一个新型的大数据旅游分析平台，以满足用户对旅游信息的需求。",
+        "image": "https://abnerblog-1317606226.cos.ap-nanjing.myqcloud.com/202407241953684.png",
+        "github": "https://github.com/cdt3211/TravelPlatform",
+        "link": "https://trip.abnerz6.top"
+    },
+    {
+        "name": "拾光优享-好物分享平台",
+        "description": "拾光优享是一个创新的好物分享平台，旨在为用户提供高质量的产品推荐和评价。在当今信息爆炸的时代，我们致力于帮助用户快速获取准确、有价值的产品信息，节省时间并做出明智的购买决策。",
+        "image": "https://abnerblog-1317606226.cos.ap-nanjing.myqcloud.com/202407241905045.png",
+        "github": "https://github.com/cdt3211/YouXiang",
+        "link": ""
+    }
+]

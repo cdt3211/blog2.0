@@ -1,0 +1,92 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import projects from '../data/projects.json';
+const pageTitle = "Projects";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <h2>作品集</h2>
+  <ul>
+    {projects.map((project)=> 
+      <div class="project-card">
+        <div class="desc">
+          <h3>{project.name}</h3>
+          <p>{project.description}</p>
+          <div class="links">
+            <a href={project.github} target="_blank">github</a>
+            {project.link && <a href={project.link} target="_blank">link</a>}
+          </div>
+        </div>
+        <div class="cover">
+          <img src={project.image} alt={project.name}/>
+        </div>
+      </div>
+    )}
+  </ul>
+</BaseLayout>
+
+<style>
+  ul{
+    padding: 0 5px;
+  }
+  .project-card{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 5px;
+    background-color: rgba(244, 244, 244, 0.897);
+    transition: transform 0.4s ease-in-out;
+
+  }
+  .project-card:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    /* scale: 1.1; */
+    transform: scale(1.1);
+  }
+  .desc{
+    flex: 1;
+  }
+  .desc h3{
+    margin: 0;
+  }
+  .cover{
+    margin-left: 20px;
+  }
+  img{
+    height: 150px;
+    width: 300px;
+    border-radius: 1%;
+  }
+  .links{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  a{
+    text-decoration: underline;
+    color: black;
+    margin-right: 10px;
+  }
+  a:hover{
+    color: #0ea8e0;
+  }
+  @media screen and (max-width: 768px){
+    .project-card{
+      flex-direction: column-reverse;
+    }
+    .cover{
+      margin-left: 0;
+      padding: 8px;
+    }
+    img{
+      width: 100%;
+      height: auto;
+    }
+    .links{
+      margin-left: 0;
+    }
+    
+  }
+</style>
