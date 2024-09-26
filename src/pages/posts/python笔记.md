@@ -1,8 +1,10 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'python期末笔记'
-date: '2023-10-22'
-tags: ['python']
+title: python期末笔记
+date: 2023-10-22
+tags:
+  - python
+cat: 学习笔记
 ---
 
 > 期末总成绩=过程成绩(作业，考勤，上机)*50%+期末考试(闭卷机考) *50%

@@ -1,8 +1,10 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'SQL笔记'
-date: '2023-07-23'
-tags: ['SQL']
+title: SQL笔记
+date: 2023-07-23
+tags:
+  - SQL
+cat: 学习笔记
 ---
 
 # SQL笔记

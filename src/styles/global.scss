@@ -1,0 +1,126 @@
+$background: #fff2e2;
+$secondary: #86a9bc;
+$emphasize: #1a336b;
+$text: #333333;
+
+@font-face {
+  font-family: 'LXGW';
+  src: url('/fonts/cangerjinkai.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  background: $background;
+  color: $text;
+
+  a {
+    color: $text;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $secondary;
+  }
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 90ch;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'LXGW', sans-serif;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+
+/* 导航样式 */
+.hamburger {
+  cursor: pointer;
+  padding: 0.4rem;
+  float: right;
+  transform: scale(1.5);
+  width: 40px;
+  height: 40px;
+}
+
+.nav {
+  // background-color: white;
+  width: 100%;
+}
+
+.nav-logo {
+  a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+}
+
+.nav-links {
+  width: 100%;
+  top: 5rem;
+  margin-right: 60px;
+  display: none;
+  text-align: right;
+
+  a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: $emphasize;
+  }
+
+}
+
+.expanded {
+  display: unset;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 636px) {
+  .nav-logo {
+    float: left;
+    padding: 0.6rem;
+  }
+
+  .nav-links {
+    margin-left: 5em;
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+.categories {
+  li {
+    margin: 0.5rem 0;
+  }
+}

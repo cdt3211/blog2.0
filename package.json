@@ -17,6 +17,7 @@
     "@astrojs/vue": "^4.5.0",
     "astro": "^4.8.6",
     "preact": "^10.22.0",
+    "sass": "^1.79.3",
     "vue": "^3.4.33"
   },
   "devDependencies": {

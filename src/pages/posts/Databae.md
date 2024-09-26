@@ -1,9 +1,8 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-
-title: '数据库期末笔记'
-
+title: 数据库期末笔记
 date: 2024-05-23
+cat: 学习笔记
 ---
 
 ## 一、绪论

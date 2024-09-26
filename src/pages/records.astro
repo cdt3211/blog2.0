@@ -1,22 +1,30 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = "Records";
+import BaseLayout from "../layouts/BaseLayout.astro";
+// const allPosts = await Astro.glob("../pages/posts/*.md");
+
+const pageTitle = "记录";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <!-- <h2>{pageTitle}</h2> -->
-  <ul>
-    <li><a href="/books/">Books</a></li>
-    <li><a href="/movies/">Movies</a></li>
+  <h2>分类</h2>
+  <ul class="categories">
+    <!-- 查询并获取所有存在的分类 -->
+    <!-- {
+      allPosts
+        .map((post) => post.frontmatter.cat)
+        .filter((cat, index, self) => self.indexOf(cat) === index)
+        .map((cat) => (
+          <li>
+            <a href={`/category/${cat}/`}>{cat}</a>
+          </li>
+        ))
+    } -->
+    <li><a href="/categories/books/">读书笔记</a></li>
+    <li><a href="/categories/notes/">学习笔记</a></li>
+    <li><a href="/categories/tech/">技术</a></li>
+    <li><a href="/categories/life/">随笔</a></li>
+    <li><a href="/categories/other/">其它</a></li>
     <li><a href="/projects/">Projects</a></li>
   </ul>
+  <h2>标签</h2>
 </BaseLayout>
-<style>
-  a{
-    color: #000000;
-    text-decoration: none;
-  }
-  li{
-    margin: 10px 0;
-  }
-</style>

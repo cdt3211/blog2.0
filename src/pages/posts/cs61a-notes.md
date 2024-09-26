@@ -1,8 +1,11 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'CS61A学习笔记'
-date: '2023-09-10'
-tags: ['python','cs61a']
+title: CS61A学习笔记
+date: 2023-09-10
+tags:
+  - python
+  - cs61a
+cat: 学习笔记
 ---
 
 # HW

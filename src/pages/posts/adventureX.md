@@ -1,9 +1,13 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: '关于AdventureX黑客松的一些感想'
+title: 关于AdventureX黑客松的一些感想
 date: 2024-07-22
-description: '这是由一群高中生举办的，中国第一场年轻人的黑客松。'
-tags: ["AdventureX", "hackthon", "web3"] 
+description: 这是由一群高中生举办的，中国第一场年轻人的黑客松。
+tags:
+  - AdventureX
+  - hackthon
+  - web3
+cat: 随笔
 ---
 ![赛后大合照](https://abnerblog-1317606226.cos.ap-nanjing.myqcloud.com/202407222354731.png)
 

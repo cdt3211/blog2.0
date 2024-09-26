@@ -1,12 +1,16 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: '我的第一篇博客文章'
+title: 我的第一篇博客文章
 date: 2024-05-21
-description: '这是我 Astro 博客的第一篇文章。'
-tags: ["astro", "blogging", "learning in public"]
+description: 这是我 Astro 博客的第一篇文章。
+tags:
+  - astro
+  - blogging
+  - learning
+  - in
+  - public
+cat: 其它
 ---
-
-
  欢迎来到我学习关于 Astro 的新博客！在这里，我将分享我建立新网站的学习历程。
 
  ## 我做了什么

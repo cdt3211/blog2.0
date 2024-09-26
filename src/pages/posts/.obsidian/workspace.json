@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "56fad5401a9b758f",
+        "id": "d265aa28e501ae7c",
         "type": "tabs",
         "children": [
           {
-            "id": "dcefb0d77331d349",
+            "id": "528f6c4c6bd40583",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "books.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "books.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "books.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "books.md"
+              }
             }
           }
         ]
@@ -138,6 +146,34 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "dcefb0d77331d349",
-  "lastOpenFiles": []
+  "active": "528f6c4c6bd40583",
+  "lastOpenFiles": [
+    "adventureX.md",
+    "长安的荔枝.md",
+    "文城.md",
+    "晚安，坂本龙一教授.md",
+    "太白金星有点烦.md",
+    "算法设计与分析.md",
+    "数字逻辑笔记.md",
+    "数据结构期末重点.md",
+    "马原.md",
+    "林花谢了春红，太匆匆。无奈朝来寒雨晚来风.md",
+    "计组期中考点.md",
+    "计组期末.md",
+    "基于Zeabur部署Memos实现说说页面.md",
+    "代码整洁之道.md",
+    "搭建博客中遇到的一个问题及解决办法.md",
+    "操作系统.md",
+    "SQL笔记.md",
+    "python笔记.md",
+    "post1.md",
+    "movies.md",
+    "mipad.md",
+    "Databae.md",
+    "cs61a-notes.md",
+    "books.md",
+    "index.astro",
+    "未命名.md",
+    "2024-05-21.md"
+  ]
 }
