@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "books.md",
+                "file": "adventureX.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "books.md",
+                "file": "adventureX.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "books.md",
+                "file": "adventureX.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "books.md"
+                "file": "adventureX.md"
               }
             }
           }
@@ -148,6 +148,8 @@
   },
   "active": "528f6c4c6bd40583",
   "lastOpenFiles": [
+    "搭建博客中遇到的一个问题及解决办法.md",
+    "books.md",
     "adventureX.md",
     "长安的荔枝.md",
     "文城.md",
@@ -162,7 +164,6 @@
     "计组期末.md",
     "基于Zeabur部署Memos实现说说页面.md",
     "代码整洁之道.md",
-    "搭建博客中遇到的一个问题及解决办法.md",
     "操作系统.md",
     "SQL笔记.md",
     "python笔记.md",
@@ -171,7 +172,6 @@
     "mipad.md",
     "Databae.md",
     "cs61a-notes.md",
-    "books.md",
     "index.astro",
     "未命名.md",
     "2024-05-21.md"
