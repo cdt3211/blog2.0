@@ -1,13 +1,14 @@
 ---
-import BaseLayout from './BaseLayout.astro';
+import BaseLayout from "./BaseLayout.astro";
 const { frontmatter } = Astro.props;
 ---
+
 <BaseLayout pageTitle={frontmatter.title}>
     <div class="title">
         <h1>{frontmatter.title}</h1>
     </div>
     <div class="time">
-        <p class="date">{frontmatter.date.toString().slice(0,10)}</p>
+        <p class="date">{frontmatter.date.toString().slice(0, 10)}</p>
     </div>
     <p class="description"><em>{frontmatter.description}</em></p>
     <article>
@@ -15,23 +16,42 @@ const { frontmatter } = Astro.props;
     </article>
 </BaseLayout>
 <style>
-    .title{
+    .title {
         text-align: center;
     }
-    .time{
+    .time {
         text-align: center;
     }
-    .date{
+    .date {
         font-size: 0.8em;
         color: #666;
     }
-    .description{
+    .description {
         text-align: center;
     }
     article :global(img) {
-    max-width: 80%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    article :global(pre) {
+        background-color: #0b192c !important;
+        padding: 1em;
+        border-radius: 5px;
+        overflow-x: auto;
+
+        code {
+            background-color: transparent !important;
+            font-weight: 400;
+        }
+    }
+    article :global(code) {
+        font-family: "Courier New", Courier, monospace;
+        padding: 0.2em 0.4em;
+        background-color: #ede8dc;
+        border-radius: 5px;
+        /* font-style: italic; */
+        font-weight: 600;
     }
 </style>

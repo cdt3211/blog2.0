@@ -1,0 +1,15 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "记录";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <h2>分类</h2>
+  <ul class="categories">
+    <li><a href="/categories/books/">读书笔记</a></li>
+    <li><a href="/categories/notes/">学习笔记</a></li>
+    <li><a href="/categories/tech/">技术</a></li>
+    <li><a href="/categories/life/">随笔</a></li>
+    <li><a href="/categories/other/">其它</a></li>
+  </ul>
+</BaseLayout>
