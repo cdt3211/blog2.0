@@ -1,11 +1,38 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import projects from "../data/projects.json";
 const pageTitle = "记录";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h2>记录</h2>
-  <a href="/projects/">我做的一些东西...</a>
+  <h2>Memos</h2>
+  <a href="https://memos.abnerz6.top/" target="_blank">Memos</a>
+
+  <h2>Projects</h2>
+  <ul class="projects-list">
+    {
+      projects.map((project) => (
+        <div class="project-card">
+          <div class="desc">
+            <h3>{project.name}</h3>
+            <p>{project.description}</p>
+            <div class="links">
+              {project.github && (
+                <a href={project.github} target="_blank">
+                  github
+                </a>
+              )}
+              {project.link && (
+                <a href={project.link} target="_blank">
+                  link
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      ))
+    }
+  </ul>
 </BaseLayout>
 
 <style>
@@ -14,5 +41,60 @@ const pageTitle = "记录";
   }
   a {
     color: #1890ff;
+  }
+
+  .projects-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+  }
+
+  .project-card {
+    background: #a0a0a1;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .desc {
+    padding: 16px;
+  }
+
+  .desc h3 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: white;
+  }
+
+  .desc p {
+    margin: 0 0 16px;
+    color: whitesmoke;
+  }
+
+  .links a {
+    color: black;
+    margin-right: 10px;
+    text-decoration: underline;
+    font-size: 16px;
+  }
+
+  .links a:hover {
+    text-decoration: underline;
+  }
+
+  .cover img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 </style>

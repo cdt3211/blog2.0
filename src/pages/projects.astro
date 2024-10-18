@@ -1,8 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import projects from "../data/projects.json";
-import { Card } from "antd";
-const { Meta } = Card;
 const pageTitle = "Projects";
 ---
 
@@ -28,9 +26,6 @@ const pageTitle = "Projects";
               )}
             </div>
           </div>
-          {/* <div class="cover">
-            {project.image && <img src={project.image} alt={project.name} />}
-          </div> */}
         </div>
       ))
     }
