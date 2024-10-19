@@ -29,6 +29,14 @@ const { frontmatter } = Astro.props;
     .description {
         text-align: center;
     }
+    article {
+        a {
+            color: #1890ff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
     article :global(img) {
         max-width: 80%;
         height: auto;
