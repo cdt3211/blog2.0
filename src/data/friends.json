@@ -30,12 +30,6 @@
     "description": "漂泊于互联网中的小窝"
   },
   {
-    "name": "轻风BLOG",
-    "url": "https://qingfengnb.cn/",
-    "avatar": "https://image.qingfengnb.cn/LightPicture/2023/07/50d39aeea489276c.jpg",
-    "description": "茫茫人海，多么幸运才能遇见你"
-  },
-  {
     "name": "西瓜撞地球",
     "url": "https://www.bio-w.cn/",
     "avatar": "https://bu.dusays.com/2023/04/19/643f59048bc63.png",
@@ -48,15 +42,15 @@
     "description": "去做吧，反正都会后悔"
   },
   {
-    "name": "Steven Lynn's Blog",
-    "url": "https://blostv.lolg/",
-    "avatar": "https://blog.stv.lol/favicon.ico",
-    "description": ""
-  },
-  {
     "name": "Chenli",
     "url": "https://chenliss.cn/",
     "avatar": "https://bu.dusays.com/2023/08/27/64eb384e49c82.jpg",
     "description": "记录生活,分享生活"
+  },
+  {
+    "name": "Sy_个人博客",
+    "url": "https://shenying.website",
+    "avatar": "https://shenying.website/wp-content/uploads/2024/12/e9ba2fd2bf6b4c6fa1829b3a9efb461ffda895e877be09b92d602fe625490daa.jpg",
+    "description": "简约风格博客网站：游戏与web开发，热爱生活与分享。"
   }
 ]
